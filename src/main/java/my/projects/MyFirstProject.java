@@ -6,8 +6,24 @@ public class MyFirstProject {
 
         public static void main(String[] args) {
 
+
+            String[] start = {"Ready...",  "Steady...",  "Go!"};
+                for (String b : start) {
+            System.out.println(b);
+            }
+
             String greeting = "Hi there!";
             System.out.println(greeting);
+
+
+            for (int a = 1; a < 10; a++) {
+                if (a == 4) {
+                    break;
+                }
+                System.out.println(a + "...");
+            }
+
+            System.out.println("Let's start!");
 
 
             System.out.println("Please enter your name:");
