@@ -31,6 +31,10 @@ public class MyFirstProject {
                 String name = scanner.nextLine();
             System.out.println("Hi," + name + "! ");
 
+            System.out.println("Please enter your phone:");
+            long phone = Long.parseLong(scanner.nextLine());
+            System.out.println("Your phone is:" + phone + ". I'll try to remember it!");
+
 
             System.out.println("Please enter your hobby:");
                 String hobby = scanner.nextLine();
