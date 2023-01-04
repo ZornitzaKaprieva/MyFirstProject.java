@@ -41,16 +41,10 @@ public class MyFirstProject {
                 String hobby = scanner.nextLine();
             System.out.println("Your hobby is:" + hobby + ". That is really awesome hobby!");
 
-
-            System.out.println("How old are you?");
-                int myAge = scanner.nextInt();
-                String result = (myAge < 30) ? "You are " + myAge + "! You are a young person full of energy!" : "You are " + myAge + " years old, but you look much younger!";
-            System.out.println(result);
-
             System.out.println("Are you male or female?");
-                String gender = scanner.nextLine();
+            String gender = scanner.nextLine();
             System.out.println("What color are your eyes?");
-                String eyesColor = scanner.nextLine();
+            String eyesColor = scanner.nextLine();
 
             switch (gender) {
                 case "male":
@@ -92,6 +86,12 @@ public class MyFirstProject {
                 default:
                     System.out.println("Well, That's odd! You are one of a kind!");
             }
+
+            System.out.println("How old are you?");
+                int myAge = scanner.nextInt();
+                String result = (myAge < 30) ? "You are " + myAge + "! You are a young person full of energy!" : "You are " + myAge + " years old, but you look much younger!";
+            System.out.println(result);
+
 
             System.out.println("Pick a number from 1 to 5 and see what comes up: ");
                 int mySwitch2 = scanner.nextInt();
