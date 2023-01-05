@@ -27,14 +27,21 @@ public class MyFirstProject {
             System.out.println("Let's start!");
 
 
-            System.out.println("Please enter your name:");
+            System.out.println("Please enter your full name:");
                 Scanner scanner = new Scanner(System.in);
                 String name = scanner.nextLine();
-            System.out.println("Hi," + name + "! ");
+            System.out.printf("Hi, %s! Nice to meet you!\n", name);
 
-            System.out.println("Please enter your phone:");
+            System.out.println("Please enter your last name:");
+                char[] name1 = scanner.nextLine().toCharArray();
+            System.out.println("Reversed your last name looks like this: ");
+                for (int i = name1.length - 1; i >= 0; i--) {
+            System.out.print(name1[i]);
+            }
+
+            System.out.println("\nPlease enter your phone:");
             long phone = Long.parseLong(scanner.nextLine());
-            System.out.println("Your phone is:" + phone + ". I'll try to remember it!");
+            System.out.printf("Your phone is: %d. I'll try to remember it!\n", phone);
 
 
             System.out.println("Please enter your hobby:");
